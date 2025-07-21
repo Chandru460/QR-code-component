@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+--White: hsl(0, 0%, 100%);
+--Slate-300: hsl(212, 45%, 89%);
+--Slate-500: hsl(216, 15%, 48%);
+--Slate-900: hsl(218, 44%, 22%);
+
+}
+body{
+    background-color: var(--Slate-300);
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-color: var(--White);
+    width: 270px;
+    height: 420px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: outfit, sans-serif;
+}
+.container>img{
+    width: 240px;
+    height:245px ;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    position: relative;
+    top: -5px;
+    
+}
+.container>h4{
+    font-size: 19px;
+    color: var(--Slate-900);
+    text-align: center;
+    padding: 0 20px;
+    
+}
+.container>p{
+    color: var(--Slate-500);
+    text-align: center;
+    font-size: 13px;
+    padding: 0 35px;
+    position: relative;
+    top: -10px;
+}
+@media screen and (max-width: 500px){
+    body{
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container{
+        width: 350px;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .container>img{
+        width: 290px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        margin-top: 20px;
+        top: -19px;
+    }
+    .container>h4{
+        font-size: 25px;
+        padding: 0 25px;
+        position: relative;
+        top: -15px;   
+    }
+    .container>p{
+        font-size: 18px;
+        padding: 0 20px;
+        position: relative;
+        top: -15px;
+    }
+}
